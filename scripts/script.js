@@ -1,4 +1,4 @@
-const host = "http://localhost:8080";
+const host = "https://ades-2b01.herokuapp.com/";
 var arrivalChart;
 var trackingBoxCount = 0;
 
