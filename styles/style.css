@@ -1,0 +1,143 @@
+body {
+    background-color: black;
+    text-align: center;
+}
+
+div {
+    color: white;
+}
+
+header {
+    padding: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: rgb(205, 145, 77);
+    padding: 20px;
+}
+
+#invisible-box,
+#add-tracking-box,
+.tracking-box {
+    display: inline-block;
+    width: 42%;
+    margin: 20px;
+    padding: 15px;
+}
+
+#add-tracking-box {
+    background-color: black;
+    border: 5px dotted rgb(205, 145, 77);
+    border-radius: 20px;
+}
+
+.tracking-box {
+    background-color: black;
+    border: 5px solid rgb(205, 145, 77);
+    border-radius: 20px;
+    text-align: left;
+}
+
+.tracking-form {
+    margin-left: 40px;
+    margin-top: 12px;
+}
+
+.btnClose {
+    color: gold;
+    font-weight: bold;
+    background-color: black;
+    border: 0px;
+    font-size: larger;
+    float: right;
+}
+
+.btnClose:hover {
+    color: rgb(205, 145, 77);
+}
+
+#label-companyid {
+    margin-right: 20px
+}
+
+#label-queueid {
+    margin-right: 40px
+}
+
+.companyid,
+.queueid {
+    width: 167px;
+    padding: 3px;
+}
+
+.btnSubmit {
+    background-color: gold;
+    margin-left: 20px;
+    border: 2px solid rgb(205, 145, 77);
+    border-radius: 5px;
+    padding: 2px 18px 2px 18px;
+}
+
+.hideInactive {
+    margin-left: 20px;
+}
+
+#btnAddTracking {
+    font-weight: bold;
+    font-size: large;
+    color: gold;
+    background-color: black;
+    border: none;
+}
+
+#btnAddTracking:hover {
+    color: rgb(205, 145, 77);
+}
+
+.invalid-input {
+    display: none;
+    margin-left: 104px;
+    margin-top: 5px;
+    color: red;
+}
+
+.loading {
+    display: none;
+    float: right;
+    width: 10px;
+    height: 10px;
+    margin-right: 45px;
+    border: 7px solid rgba(255, 255, 255, .3);
+    border-radius: 50%;
+    border-top-color: gold;
+    animation: spin 0.6s ease-in-out infinite;
+    -webkit-animation: spin 0.6s ease-in-out infinite;
+}
+
+.error {
+    display: none;
+    float: right;
+    width: 10px;
+    height: 10px;
+    margin-right: 45px;
+    margin-top: 30px;
+}
+
+.chart{
+    display: none;
+    margin-top: 15px;
+    margin-left: -18px;
+}
+
+@keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}

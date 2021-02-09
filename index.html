@@ -1,9 +1,31 @@
 <html>
 
-<head></head>
+<head>
+    <link type="text/css" rel="stylesheet" href="./styles/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/script.js"></script>
+    <script src="./node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src="./node_modules/moment/moment.js"></script>
+</head>
 
 <body>
-    <p>Hello World!</p>
+
+    <header>
+        <img src="images/logo.png" style="height: 30%; width: 30%;">
+    </header>
+
+    <div id="container">
+        <div id="add-tracking-box">
+            <button id="btnAddTracking" onclick="addTracking()">+ Add Tracking</button>
+        </div>
+
+        <div id="invisible-box"></div>
+    </div>
+
+    <footer id="footer">
+        <div class="copyright">KOI Thé CO,LTD.</div>
+    </footer>
+
 </body>
 
 </html>
