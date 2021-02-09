@@ -48,7 +48,7 @@ function searchTracking(id) {
     displayElement("loading" + trackBoxID, "block")
     document.getElementById("invalid-input" + trackBoxID).setAttribute("style", `display: none`);
 
-    fetch(`${host}/company/queue?company_id=${companyid}`)
+    fetch(`${host}company/queue?company_id=${companyid}`)
         .then(function (response) {
             return response.json();
         })
@@ -125,7 +125,7 @@ function updateChart(id, chart) {
     const formatted = dateISO.replace("+", "%2B");
     displayElement("loading" + id, "block")
 
-    fetch(`${host}/company/arrival_rate?queue_id=${queueid}&from=${formatted}&duration=3`)
+    fetch(`${host}company/arrival_rate?queue_id=${queueid}&from=${formatted}&duration=3`)
         .then(function (response) {
             return response.json();
         })
